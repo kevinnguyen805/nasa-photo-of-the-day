@@ -10,7 +10,6 @@ export default function POTD(){
      useEffect( () => {
           axios.get(`https://api.nasa.gov/planetary/apod?api_key=C0c78CXfKQ5OLSP4oq8t4MBBFZAWwiqsgP4aSzzL`)
           .then(response => {
-               console.log(response.data)
                const nasaData = response.data;
                setData(nasaData);
           })
@@ -19,22 +18,12 @@ export default function POTD(){
           })
      },[])
 
+
      // remember that { data } contains the {objectData}
      // passing {objectData} as props means { {objectData} }
      return(
           <>
-          <POTDCard 
-               info={data}
-          />
+          <POTDCard info={data} />
           </>
      )
 }
-/*
-
-credits={item.copyright} 
-date={item.date}
-explanation={item.explanation}
-link={item.hdurl}
-title={item.title}
-
-*/
