@@ -1,12 +1,15 @@
 import React from "react";
 import "./App.css";
 import POTD from './Components/POTD'
+import StretchPOTD from './Components/StretchComponents/StretchPOTD'
 
 function App() {
   return (
     <div className="App">
       <h1>Astronomy Photo of the Day</h1>
         <POTD />
+      <h2>Stretch : Astronomy Photo of the Day</h2>
+        <StretchPOTD />
     </div>
   ); 
 }

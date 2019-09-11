@@ -14,7 +14,7 @@ console.log(props.info.url)
                     <h3>{props.info.title}</h3>
                     <p>{props.info.date}</p>
                     <p>{props.info.explanation}</p>
-                    <span><p>{props.info.copyright}</p></span>
+                    <span><p>CopyRight: {props.info.copyright}</p></span>
                </div>
           </div>
      )
