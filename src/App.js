@@ -5,10 +5,10 @@ import POTD from './Components/POTD'
 function App() {
   return (
     <div className="App">
-      <p>
+ 
         <POTD />
     
-      </p>
+     
     </div>
   ); 
 }
@@ -16,6 +16,8 @@ function App() {
 export default App;
 
 /*
+background color - black white black gradient
+
 Prototype notes
 - copyright
 - date
