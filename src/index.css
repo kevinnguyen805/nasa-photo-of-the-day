@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.app h1{
+  font-family: 'Cabin', sans-serif;
+  font-weight:600;
+}
+.picture{
+  width:100%;
+}
+.container{
+  font-family: 'Open Sans', sans-serif;
+}
