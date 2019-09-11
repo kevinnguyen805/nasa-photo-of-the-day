@@ -8,7 +8,7 @@ console.log(props.info.url)
      return (
           <div className="container">
                <div className="photo">
-                    <img src={props.info.hdurl} alt="NASA of the day" />
+                    <img className="picture" src={props.info.hdurl} alt="NASA of the day" />
                </div>
                <div className="photoContent">
                     <h3>{props.info.title}</h3>
