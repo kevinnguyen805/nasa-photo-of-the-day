@@ -1,16 +1,29 @@
 import React from "react";
-import "./App.css";
 import POTD from './Components/POTD'
 import StretchPOTD from './Components/StretchComponents/StretchPOTD'
+import styled from 'styled-components'
+
+const App = styled.div`
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+`
+const POTDTitle = styled.h1`
+  font-family: 'Cabin', sans-serif;
+  font-weight:600;
+`
 
 function App() {
   return (
-    <div className="App">
-      <h1>Astronomy Photo of the Day</h1>
+    <App>
+      <POTDTitle>Astronomy Photo of the Day</POTDTitle>
         <POTD />
-      <h2>Stretch : Astronomy Photo of the Day</h2>
+      <POTDTitle>Stretch : Astronomy Photo of the Day</POTDTitle>
         <StretchPOTD />
-    </div>
+    </App>
   ); 
 }
 
